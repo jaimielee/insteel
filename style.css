@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+body{
+  background: url(png/background.png);
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 25px
+}
+/* div{border : 3px solid white;} _div분배확인 */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+    /* 반응형 (auto의 개수 = 칼럼개수) */
+  padding: 10px;
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  width: 100%
+}
+.header {
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+}
+#part1{
+  text-align: right;
+  width: 200px;
+  padding: 2px;
+  border-radius: 10%
+}
+#part2-1, #part2-23, #part2-4{
+  padding: 5px;
+}
+
+.part2,.part3,.part4,.part5,.part6{
+  margin: 30px;
+}
+
+#part2-1{
+  padding: 40px;
+  background-repeat: no-repeat;
+}
+#out{
+  margin: 1px;
+  height: 20px; border-radius: 40px;
+  /* background-image: url(png/part2/bar.png); */
+}
+#out span{display: block; padding: 0 10px; width: 75%; height: 20px;
+line-height: 20px; text-align: right; background: skyblue;
+border-radius: 40px;
+box-sizing: border-box; color: #fff;}
+
+
+#part2-23, #part3-12, #part3-34,#part3-56, #part5-12,#part5-34,
+#part6-12, #part6-34{
+  display:inline-flex;
+}
+#out{
+  padding: 10px;
+}
+#part3-6, #part5-4, #part6-4{
+  visibility: hidden;
+}
+img{
+  max-width: 100%;
+    height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px black opacity=0.30);
+}
